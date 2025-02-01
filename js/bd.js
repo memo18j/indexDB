@@ -15,7 +15,7 @@ function iniciarBD() {
   btnAgregar.addEventListener("click", agregarPersona);
 
   //Abrir la base de datos
-  var solicitud = window.indexedDB.open("miBaseDatos,", "2");
+  var solicitud = window.indexedDB.open("miBaseDatos");
   //Asignar los eventos
   solicitud.addEventListener("error", mostrarError);
   solicitud.addEventListener("success", iniciar);
